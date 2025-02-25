@@ -8,6 +8,10 @@ public class DolphAdventureGameApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DolphAdventureGameApplication.class, args);
+        int seed = 50;
+        SeededDungeonGenerator generator = new SeededDungeonGenerator(seed);
+        generator.generateDungeon();
+        generator.printDungeon();
     }
 
 }
